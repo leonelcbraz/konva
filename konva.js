@@ -8,7 +8,7 @@
    * Konva JavaScript Framework v4.1.2
    * http://konvajs.org/
    * Licensed under the MIT
-   * Date: Wed Jan 08 2020
+   * Date: Thu Jan 16 2020
    *
    * Original work Copyright (C) 2011 - 2013 by Eric Rowell (KineticJS)
    * Modified work Copyright (C) 2014 - present by Anton Lavrenov (Konva)
@@ -13422,7 +13422,7 @@
                   for (var li = 0; li < text.length; li++) {
                       var letter = text[li];
                       // skip justify for the last line
-                      if (letter === ' ' && n !== textArrLen - 1 && align === JUSTIFY) {
+                      if (letter === ' ' && align === JUSTIFY) {
                           lineTranslateX += Math.floor((totalWidth - padding * 2 - width) / spacesNumber);
                           // context.translate(
                           //   Math.floor((totalWidth - padding * 2 - width) / spacesNumber),
