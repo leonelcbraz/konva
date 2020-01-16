@@ -255,7 +255,7 @@ export class Text extends Shape<TextConfig> {
         for (var li = 0; li < text.length; li++) {
           var letter = text[li];
           // skip justify for the last line
-          if (letter === ' ' && n !== textArrLen - 1 && align === JUSTIFY) {
+          if (letter === ' ' && align === JUSTIFY) {
             lineTranslateX += Math.floor(
               (totalWidth - padding * 2 - width) / spacesNumber
             );
